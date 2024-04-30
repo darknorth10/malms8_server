@@ -89,6 +89,7 @@ class ClassRoom(models.Model):
 class Assessment(models.Model):
     TEST_TYPES = {
         "formative": "FORMATIVE",
+        "mastery": "MASTERY",
         "post_test": "POST-TEST",
         "pre_test": "PRE-TEST",
     }
