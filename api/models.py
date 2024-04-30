@@ -114,6 +114,7 @@ class Score(models.Model):
 class Question(models.Model):
     assessment = models.ForeignKey(Assessment, on_delete=models.CASCADE)
     question = models.TextField(max_length=550, null=False)
+    with_image = models.BooleanField(default=0)
     a = models.CharField(max_length=250, null=False)
     b = models.CharField(max_length=250, null=False)
     c = models.CharField(max_length=250, null=False)
